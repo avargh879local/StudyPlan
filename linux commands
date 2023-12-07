@@ -1,0 +1,31 @@
+
+command : chmod
+
+Task	chmod Command Example
+Change File Permissions (Symbolic Notation)	chmod permissions filename
+Change File Permissions (Octal Notation)	chmod 644 filename
+Change Directory Permissions (Symbolic Notation)	chmod permissions directoryname
+Change Directory Permissions (Octal Notation)	chmod 755 directoryname
+Recursively Change Permissions (Symbolic Notation)	chmod -R permissions directoryname
+Recursively Change Permissions (Octal Notation)	chmod -R 755 directoryname
+
+
+command: usermod
+
+Certainly! Here's the information organized into a table:
+
+Task	usermod Command Example
+Change User's Username	sudo usermod -l newusername oldusername
+Change User's Home Directory	sudo usermod -d /new/home/directory username
+Change User's Shell	sudo usermod -s /bin/bash username
+Change User's Primary Group	sudo usermod -g newprimarygroup username
+Add User to Supplementary Groups	sudo usermod -aG group1,group2 username
+Lock User Account	sudo usermod -L username
+Unlock User Account	sudo usermod -U username
+Set User Account Expiry Date	sudo usermod -e 2023-12-31 username
+Force Password Change	sudo usermod -e 1970-01-01 username
+Change User's User ID (UID)	(Not recommended; use with caution)
+Change User's Group ID (GID)	(Not recommended; use with caution)
+Modify User Comments or Information	sudo usermod -c "New Comment" username
+Change Password Aging and Expiry Policies	Various options to manage password aging and expiry
+Other Account Modifications	man usermod for a complete list of options
