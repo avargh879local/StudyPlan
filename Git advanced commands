@@ -1,0 +1,13 @@
+git reset --hard <commit-hash>
+Resets the current branch to a specific commit, discarding all commits made after that commit.
+git branch <new-branch> <commit-hash>
+Creates a new branch starting from a specific commit.
+git checkout <commit-hash>
+Checks out a specific commit, putting the repository in a detached HEAD state.
+git cherry-pick <commit-hash>
+Applies the changes from a specific commit onto the current branch.
+git merge <branch-name>
+Combines the history and changes of another branch into the current branch.
+git rebase -i <base-commit>
+To rework the commit history interactively, allowing editing, reordering, or squashing of commits.
+
